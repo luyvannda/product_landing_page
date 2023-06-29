@@ -48,6 +48,7 @@ body {
   justify-content: space-around;
   gap: 2rem;
   flex: 1;
+  margin-right: 2rem;
   margin-left: 10rem;
 }
 
@@ -57,6 +58,7 @@ body {
 
 #nav-bar ul li a {
   text-decoration: none;
+  color: #252425;
 }
 
 .form-container {
@@ -109,6 +111,48 @@ h2 {
   transition: background-color 1s;
 }
 
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon {
   color: darkorange;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  width: 20vw;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  margin-right: 16px;
+}
+
+.fa-fire-flame-curved {
+  font-size: 3em;
+}
+
+.fa-truck {
+  font-size: 3em;
+}
+
+.fa-battery-full {
+  font-size: 3em;
 }
