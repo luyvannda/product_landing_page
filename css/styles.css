@@ -114,6 +114,7 @@ body {
 h2 {
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 }
 
 #form {
@@ -180,6 +181,12 @@ h2 {
   width: 14vw;
 }
 
+@media screen and (max-width:510px) {
+  .icon {
+    display: none;
+  }
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -187,6 +194,27 @@ h2 {
   height: 125px;
   width: 76vw;
 }
+
+@media screen and (max-width:510px) {
+  .description {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width:380px) {
+  .description {
+    height: 170px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .description {
+    height: 190px;
+  }
+}
+
+
+
 
 .fa-fire-flame-curved {
   font-size: 3em;
@@ -210,6 +238,13 @@ h2 {
   justify-content: center;
   width: 100%;
   margin-bottom: 2.5rem;
+}
+
+
+@media screen and (max-width:800px) {
+  #pricing {
+    flex-wrap: wrap;
+  }
 }
 
 .product {
