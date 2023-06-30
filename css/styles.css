@@ -38,7 +38,7 @@ body {
   gap: 5rem;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:895px) {
   .top-container {
     display: flex;
     flex-direction: column;
@@ -47,7 +47,6 @@ body {
     gap: 0;
     width: 100%;
   }
-
 
   #nav-bar {
     justify-content: center;
@@ -60,11 +59,18 @@ body {
 }
 
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1000px) {
+  .logo {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width:895px) {
 
   .logo {
     align-self: center;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -79,7 +85,15 @@ body {
   margin-left: 10rem;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:1000px) {
+  #nav-bar>ul {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width:895px) {
   #nav-bar>ul {
     flex-direction: column;
     justify-content: center;
@@ -105,7 +119,7 @@ body {
   height: 200px;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width:895px) {
   .form-container {
     margin-top: 140px;
   }
@@ -213,6 +227,31 @@ h2 {
   }
 }
 
+#video {
+  width: 500px;
+  height: 300px;
+}
+
+@media screen and (max-width:539px) {
+  #video {
+    width: 460px;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #video {
+    width: 350px;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width:360px) {
+  #video {
+    width: 300px;
+    height: fit-content;
+  }
+}
 
 
 
@@ -243,9 +282,13 @@ h2 {
 
 @media screen and (max-width:800px) {
   #pricing {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
   }
 }
+
 
 .product {
   display: flex;
@@ -256,6 +299,25 @@ h2 {
   border-radius: 4px;
   width: calc(80% / 3);
   margin: 10px;
+}
+
+
+@media screen and (max-width:750px) {
+
+  .product {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  .product {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 #Tenor,
